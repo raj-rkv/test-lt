@@ -1,13 +1,15 @@
 @import url('./index.css');
 
 #first-section {
-    display: flex;
+   
     overflow: hidden;
     background-color: #F2F2F2;
+    margin-bottom:10px;
 }
 
 .first-sec-info {
     display: flex;
+    flex:1;
     align-items: center;
     width: 40%;
     justify-content: center;
@@ -20,8 +22,10 @@
 }
 
 .first-section-img-cnt {
+    flex : 1.3 ;
     width: 60%;
-    box-shadow: 4px 0px 25px;
+    box-shadow: 3px -20px 12px 19px rgba(64, 60, 67, 0.16);
+    z-index: 20;
 }
 
 .ad-container {
@@ -147,9 +151,7 @@
         width: 100%;
     }
 
-    .title {
-        font-size: 20px !important;
-    }
+
 
     .location {
         font-size: 12pt;
@@ -158,8 +160,6 @@
     .features {
         flex-direction: row;
         gap: 10px;
-        font-size: 1vw;
-        
     }
 
     .pricing {
@@ -184,18 +184,13 @@
         width: 100%;
     }
 
-    .title {
-        font-size: 24px !important;
-    }
+    
 
     .location {
         font-size: 14pt;
     }
 
-    .features {
-        font-size: 12px;
-        /* padding-left: 5%; */
-    }
+   
 }
 
 /* Large Screens (Above 992px) */

@@ -267,6 +267,9 @@ section {
     .rera-qr-container{
         margin-bottom :10px;
     }
+    .rera-heading{
+        font-size: 15pt;
+    }
 }
 
 /* Mobile-specific styles */
