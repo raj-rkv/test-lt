@@ -54,8 +54,8 @@ app.post('/send', async (req, res) => {
         country_code: CountryCode,
         mobile: mobile,
         message: "NA",
-        landing_page_url: "https://thewadhwacourtyard.in",
-        active_page_url: "https://thewadhwacourtyard.in",
+        landing_page_url: "https://lnthousing.com",
+        active_page_url: "https://lnthousing.com",
         opt_in: true,
         utm_source: utm_source,
         utm_medium: utm_medium,
@@ -111,7 +111,7 @@ app.post('/send', async (req, res) => {
         <li><strong>UTM Campaign:</strong> ${utm_campaign}</li>
         <li><strong>UTM Term:</strong> ${utm_term}</li>
       </ul>
-      <p><b>Team Royalti</b><br>thewadhwacourtyard.in</p>
+      <p><b>Team Royalti</b><br>lnthousing.com</p>
     `;
 
         await transporter.sendMail({
