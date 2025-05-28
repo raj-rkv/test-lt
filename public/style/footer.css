@@ -203,16 +203,21 @@
     content: '+';
     font-size: 2rem;
     font-weight: 300;
+    width: auto;
     color: #666;
     transform: translateY(-4px);
     margin-right: 10px;
     background-image: none;
+    height: auto;
 }
 
 .accordion-button:not(.collapsed)::after {
     content: '-';
+    background-image: none;
 }
-
+.accordion-item{
+    border-radius: 12px !important;
+}
 .accordion-body {
     padding: 20px 30px;
     font-size: 1rem;
