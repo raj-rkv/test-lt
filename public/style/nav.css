@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* === Navbar Core === */
+.custom-navbar {
+    font-family: 'DM Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 1vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    font-size: 1vw;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+#nav-call-btn {
+    position: relative;
+    right: 5%;
+    font-weight: 800;
+    color: white;
+    background: var(--primary-color);
+    padding: 5px 8px !important;
+    border-radius: 11px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+}
+
+#nav-call-btn:hover {
+    background: var(--mouseover-color);
+    border: 1px solid #fff !important;
+}
+
+.call-now-cnt {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.call-now-cnt:hover {
+    cursor: pointer;
+}
+
+#logoImg {
+    width: 80px;
+    height: 50px;
+}
+
+.custom-navbar-brand {
+    position: relative;
+    left: 15%;
+}
+
+.custom-navbar-brand img {
+    width: 110px;
+}
+
+.custom-navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0 auto !important;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar-links li {
+    margin: 0 10px;
+}
+
+.custom-navbar-links a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    font-size: 1vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-navbar-links a:hover {
+    color: var(--mouseover-color);
+    text-decoration: none;
+}
+
+.custom-call-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    background: #007bff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-call-btn i {
+    margin-right: 8px;
+}
+
+.custom-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.custom-menu-toggle div {
+    width: 25px;
+    height: 2px;
+    background: black;
+    margin: 4px 0;
+}
+
+/* === Responsive Design === */
+
+/* ≤1200px */
+@media (max-width: 1200px) {
+    .custom-navbar-links {
+        font-size: 17px;
+        width: 80%;
+    }
+
+    .custom-navbar-links a {
+        font-size: 1vw;
+    }
+}
+
+/* ≤992px */
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: space-between;
+        font-size: 1.2vw;
+    }
+
+    .custom-navbar {
+        flex-wrap: wrap;
+    }
+
+    .custom-navbar-links {
+        flex-direction: column;
+        position: absolute;
+        z-index: -200000;
+        left: 0;
+        width: 100%;
+        top: 50px;
+        height: 0;
+        background: #fff;
+        text-align: center;
+        padding: 10px 0;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .custom-navbar-links.active {
+        height: 300px;
+        text-align: center;
+        justify-content: inherit;
+        box-shadow: 0px 6px 5px 0px;
+    }
+
+    .custom-menu-toggle {
+        display: flex;
+    }
+
+    .custom-call-btn {
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .custom-navbar-brand {
+        left: 5%;
+    }
+
+    .call-now-cnt {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #logoImg {
+        width: 70px;
+        height: 45px;
+    }
+
+    .MahaRERA {
+        width: 6vh;
+        position: absolute;
+        right: 25%;
+    }
+}
+
+/* ≤768px */
+@media (max-width: 768px) {
+    .custom-navbar-brand {
+        left: 5%;
+    }
+
+    .custom-navbar-links a {
+        font-size: 1vw;
+        text-align: center;
+    }
+
+    .custom-call-btn {
+        font-size: 15px;
+    }
+}
+
+/* ≤576px */
+@media (max-width: 576px) {
+    .navbar-expand-lg .navbar-collapse {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .custom-navbar {
+        padding: 0px !important;
+        height: 44px;
+    }
+
+    .custom-navbar-brand {
+        left: 0%;
+    }
+
+    .custom-navbar-brand img {
+        width: 100px;
+        padding-left: 20px;
+    }
+
+    .custom-navbar-links {
+        margin-top: 5%;
+    }
+
+    .custom-navbar-links a {
+        font-size: 14px;
+        margin-top: 2%;
+    }
+
+    .custom-call-btn {
+        font-size: 14px;
+    }
+
+    .call-now-cnt {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-bottom: 2px solid #604280;
+        margin-top: 5px;
+    }
+
+    .custom-menu-toggle {
+        padding-right: 15px;
+    }
+
+    .custom-navbar-links {
+        top: 24px !important;
+    }
+
+    #first-section {
+        margin-top: 44px !important;
+    }
+
+    #logoImg {
+        width: 60px;
+        height: 40px;
+    }
+}
+
+/* ≥992px */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        font-size: 1vw;
+    }
+
+    .custom-navbar-brand {
+        left: 12%;
+    }
+
+    #logoImg {
+        width: 80px;
+        height: 50px;
+    }
+
+    .MahaRERA {
+        width: 6%;
+        position: relative;
+        right: 6%;
+    }
+}

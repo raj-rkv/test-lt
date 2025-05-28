@@ -1,0 +1,233 @@
+@import url('./index.css');
+
+.sec2 {
+    display: flex;
+    padding: 70px;
+}
+
+/* Overview section */
+.sec2-overview {
+    width: 40%;
+    margin-top: 2em;
+ 
+    margin-left: 6%;
+   
+}
+.web-car{
+    display:block !important;
+}
+.mob-car{
+    display:none !important;
+}
+
+/* Carousel container */
+.sec2-carousel-cnt {
+    width: 40%;
+    margin-top:1em;
+    margin-right: 15%;
+}
+
+/* Information text */
+.sec2-info {
+    font-size: 1vw;
+    font-weight: 500;
+    padding-left: 5% !important;
+    line-height: 35px;
+    color: #666666;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Bullet points */
+.sec2-info li::marker {
+    color: var(--primary-color);;
+    font-weight: bold;
+    display: inline-block;
+    width: 0.5em;
+    font-size: 25px;
+    margin-left: -0.6em;
+    vertical-align: sub;
+}
+
+/* Heading */
+.sec2-heading {
+    padding: 0px !important;
+    margin-bottom: 30px !important;
+    line-height: 48px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32pt !important;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Download button */
+.sec2-down-btn {
+    color: rgb(96, 66, 128);
+    font-weight: 800;
+    font-size: 16pt;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+.full-brochure {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: white;
+    background: var(--primary-color);
+  
+ 
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+ 
+    padding-bottom: 5px;
+    font-size : 21px ;
+    padding: 4px 7px 4px 7px !important;
+    border-radius: 11px;
+    font-weight: 800;
+    border: 1px solid transparent !important;
+}
+
+
+
+.full-brochure:hover {
+    text-decoration: none !important;
+    background: var(--mouseover-color);
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+  }
+  
+  .full-brochure img {
+    filter: brightness(0) invert(1);
+    /* filter: brightness(0) saturate(100%) invert(39%) sepia(9%) saturate(4027%) hue-rotate(227deg) brightness(99%) contrast(87%); */
+  
+  }
+
+
+
+
+
+
+.sec-car-aparts {
+    width: 40%;
+    margin-left: 15%;
+}
+
+/* Apartment description */
+
+/* Responsive Media Queries */
+
+/* Small Screens (Up to 576px) */
+@media (max-width: 576px) {
+    .sec2 {
+        flex-direction: column;
+        padding: 25px
+    }
+
+    .web-car{
+        display:none !important;
+    }
+    .mob-car{
+        display:block !important;
+    }
+    .sec2-overview,
+    .sec2-carousel-cnt,
+    .sec-car-aparts {
+        width: 100%;
+        margin: 0;
+        /* padding-left: 5%; */
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .sec2-info {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .sec2-heading {
+        font-size: 24pt !important;
+        line-height: 36px;
+    }
+
+    .sec2-down-btn {
+        font-size: 14pt;
+    }
+
+}
+
+/* Medium Screens (576px - 992px) */
+@media (max-width: 992px) {
+    .sec2 {
+        flex-direction: column;
+        padding: 25px;
+        align-items: center;
+    }
+
+    .sec2-overview,
+    .sec2-carousel-cnt,
+    .sec-car-aparts {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.2vw;
+    }
+
+    .sec2-info {
+        font-size: 17px;
+        line-height: 30px;
+        text-align: start;
+    }
+
+    .sec2-heading {
+        padding: 0px !important;
+    margin-bottom: 30px !important;
+    line-height: 48px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20pt !important;
+    letter-spacing: 1px;
+    font-weight: 600;
+    }
+
+    .sec2-down-btn {
+        font-size: 15pt;
+    }
+
+    .sec-desc-aparts {
+        width:100%;
+        text-align: center;
+        /* padding-left: 1.5em; */
+    }
+}
+
+/* Large Screens (Above 992px) */
+@media (min-width: 992px) {
+    .sec2 {
+        flex-direction: row;
+        /* justify-content: space-between; */
+    }
+
+    .sec2-overview {
+        font-size: 1vw;
+    }
+
+    .sec2-info {
+        font-size: 18px;
+    }
+
+    .sec2-heading {
+        font-size: 32pt !important;
+    }
+
+    .sec2-down-btn {
+        font-size: 16pt;
+    }
+    .sec-desc-aparts{
+       
+        padding-left:2em;
+    }
+}

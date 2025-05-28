@@ -1,0 +1,392 @@
+
+
+  ::-webkit-scrollbar {
+    width: 10px;    
+    border-radius: 10%;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background:var(--mouseover-color)
+    ; 
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background:var(--primary-color);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: var(--primary-color); 
+  }
+body{
+    font-family: 'DM Sans', sans-serif  !important;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    50%{
+        opacity: 0.5;
+        transform:translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.fading-in {
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+.fading-in.visible {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+
+.img-change-btn:hover .changeicon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+
+
+
+.sec-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+section {
+    scroll-margin-top: 30px;
+    overflow: clip;
+    margin-bottom: 30px;
+}
+
+.register-hover:hover {
+    text-decoration: none !important;
+    background: #7254a8;
+}
+
+
+
+#intro1 .sec-car-aparts,
+#intro2 .sec2-carousel-cnt {
+    flex: 1;
+}
+
+#intro1 .sec-desc-aparts,
+#intro2 .sec2-overview {
+    flex: 1;
+    margin-top: 2em;
+}
+
+#intro2 .sec-desc-aparts {
+    text-align: left;
+}
+
+#intro2 .sec2-heading {
+    text-align: center;
+}
+
+#intro2 .sec2-info {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#intro1 img,
+#intro2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+#intro1 .full-brochure,
+#intro2 .full-brochure {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+#intro1 .full-brochure img,
+#intro2 .full-brochure img {
+    width: 22px;
+    height: auto;
+    border-radius: 0;
+    vertical-align: middle;
+}
+
+.WA-redirect {
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    align-content: center;
+    padding: 8.5px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 0px 7px 0px black;
+    background-color: white;
+    z-index: 10;
+}
+
+.WA-redirect:hover {
+    cursor: pointer;
+}
+
+.desktopView {
+    display: flex !important;
+}
+
+.tabView {
+    display: none !important;
+}
+
+
+.mobileView {
+    display: none !important;
+}
+.rera-qr{
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive styles for intro sections */
+@media screen and (max-width: 992px) {
+
+    #intro1,
+    #intro2 {
+        padding: 40px;
+        gap: 1.5rem;
+    }
+
+    #intro1 .full-brochure,
+    #intro2 .full-brochure {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .sec2-heading {
+        font-size: 24px !important;
+    }
+
+    .desktopView {
+        display: none !important;
+    }
+
+    .tabView {
+        display: flex !important;
+    }
+
+    #intro1,
+    #intro2 {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    #intro1 .sec-desc-aparts,
+    #intro2 .sec2-overview {
+        margin-top: 1.5em;
+        order: 2;
+    }
+
+    #intro1 .sec-car-aparts,
+    #intro2 .sec2-carousel-cnt {
+        order: 1;
+    }
+
+    #intro1 .full-brochure,
+    #intro2 .full-brochure {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktopView {
+        display: none !important;
+    }
+
+    .tabView {
+        display: none !important;
+    }
+
+    .mobileView {
+        display: flex !important;
+    }
+
+    .sec-padding {
+        padding-top: 30px !important;
+        padding-bottom: 45px !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .desktopView {
+        display: none !important;
+    }
+
+    .tabView {
+        display: none !important;
+    }
+
+    .mobileView {
+        display: flex !important;
+    }
+
+    #intro1,
+    #intro2 {
+        padding: 50px;
+    }
+
+    #intro1 .sec2-heading,
+    #intro2 .sec2-heading {
+        font-size: 24px;
+    }
+
+    #intro1 .sec2-info li,
+    #intro2 .sec2-info li {
+        font-size: 14px;
+    }
+
+    .rera-qr{
+        width:50%;
+        height :auto ;
+    }
+    .rera-qr-container{
+        margin-bottom :10px;
+    }
+}
+
+/* Mobile-specific styles */
+.mob-view {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mob-view {
+        text-align: center;
+        display: flex;
+        border-top: 1px solid #fff;
+        transition: all 0.3s ease-in-out 0s;
+        z-index: 1000;
+        width: 100%;
+        background-color: var(--primary-color);
+        border-radius: 0;
+        bottom: 0;
+        height: 53px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 5px 20px;
+        position: fixed;
+    }
+    .custom-menu-toggle div {
+        width: 24px;
+        height: 2px;
+        background: black;
+        margin: 3px 0;
+    }
+
+    #nav-call-btn {
+        display: none;
+    }
+
+    .CTA-btn {
+        width: 50%;
+        display: flex;
+        padding: 5px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8px;
+    }
+
+    .WA-redirect {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 1200px) and (min-width:992px) {
+
+    .info-container{
+        padding:0% !important;
+    }
+    .car-img-cnt{
+        padding-right:0% !important;
+    }
+    .car-img-lCnt, .int1-img{
+        padding:0% !important;
+    }
+
+    .section-headings{
+        font-size : 40px !important;
+    }
+
+    .features{
+        width:100% !important;
+    }
+    .ad-container{
+        padding-top:25px !important;
+    }
+    #nav-call-btn {
+        font-size : 1vw;
+        right :15%;
+        width:110px;
+    }
+    .custom-navbar-brand{
+        position:relative;
+        left: 20px;
+    }
+    .carousel-wrapper{
+        max-width: 80% !important;
+    }
+}
+
+@media  (max-width : 992px ) {
+    #nav-call-btn {
+        font-size : 1.3vw;
+        right :15%;
+        width:110px;
+    }
+
+    
+}
+
+#rera-ul{
+    display: list-item;
+    margin:0px !important;
+    /* font-size: 15px;
+    font-weight: 550;
+    color : #666666; */
+}
+
+#rera-ul li{
+    font-size: 15px;
+    font-weight: 550;
+    color : #666666;
+}
+
+.rera-heading{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#rera-ul li::before{
+    content: "";
+}
+

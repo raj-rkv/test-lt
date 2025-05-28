@@ -1,0 +1,151 @@
+.pricing-container {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+    /* padding: 20px; */
+    margin: auto;
+}
+
+/* Flexbox for tab menu */
+.tab-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.tab-menu a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #777;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.tab-menu a.active {
+    color: #5e3b9d;
+    border-bottom: 3px solid #5e3b9d;
+}
+
+/* Table Container */
+.table-container {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.table thead th {
+    font-weight: bold;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}
+
+.price-link {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.price-link:hover {
+    color: var(--mouseover-color);
+    
+}
+
+.price-link:hover i{
+    margin-left: 2%;
+}
+
+
+/* Hide inactive tables */
+.table-container {
+    display: none;
+}
+
+.table-container.active {
+    display: block;
+}
+
+/* Responsive Buttons */
+.tab-button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #777;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* Section Styling */
+.var-sec {
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #f2f2f2 !important;
+    padding: 10px;
+}
+
+tr td {
+    background: #f2f2f2 !important;
+    padding: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Small screens: Adjust tab menu & make table scrollable */
+@media screen and (max-width: 768px) {
+    .tab-menu {
+        
+        align-items: center;
+    }
+
+    .tab-menu a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    
+
+}
+
+/* Extra Small Screens: Reduce padding & font sizes */
+@media screen and (max-width: 480px) {
+   
+
+    .tab-menu a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .tab-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
