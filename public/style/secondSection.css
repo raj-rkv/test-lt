@@ -176,7 +176,12 @@
         text-align: center;
         font-size: 1.2vw;
     }
-
+    
+    .full-brochure{
+        font-weight: 800 !important;
+        font-size: 17px !important;
+    }
+  
     .sec2-info {
         font-size: 17px;
         line-height: 30px;

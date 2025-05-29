@@ -1,10 +1,10 @@
 @import url('./index.css');
 
 #first-section {
-   
+    
     overflow: hidden;
     background-color: #F2F2F2;
-    margin-bottom:10px;
+    margin-bottom: 0px;
 }
 
 .first-sec-info {
@@ -17,6 +17,7 @@
 }
 
 .first-section-img {
+    height:100%;
     width: 100%;
     max-width: 100%;
 }
@@ -44,7 +45,9 @@
 
 .pre-launch {
     color: var(--primary-color);
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 19px;
+    margin-bottom:8px;
     text-transform: uppercase;
 }
 
@@ -56,6 +59,7 @@
     background-color: #ffffff;
     display: inline-block;
     padding: 5px;
+    margin-bottom: 8px;
     font-size: 1.3vw;
     text-transform: uppercase;
     background-color: var(--colorPrimary);
@@ -68,13 +72,15 @@
     display: block;
     padding: 0.1vw 0 0.1vw 5px;
     font-size: 11.7pt !important;
-    color: grey;
+    color: rgba(0, 0, 0, 0.65);
     text-transform: capitalize;
     line-height: 0.8vw;
     font-weight: 600;
     text-align: center;
 }
-
+.pricing{
+    padding:10px;
+}
 .features {
     display: flex;
     flex-direction: row;
@@ -85,7 +91,7 @@
     line-height: 20px;
     font-size: 15px;
     margin-top: 35px !important;
-    color: #777;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 .features span {
@@ -132,8 +138,8 @@
     text-align: center !important;
     margin-bottom: 0;
     padding: 0 2%;
-    font-weight: 600 !important;
-    color: grey;
+    font-weight: 500 !important;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 /* Media Queries */
@@ -170,25 +176,45 @@
 /* Medium Screens (576px - 992px) */
 @media (max-width: 992px) {
     #first-section {
+
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
+    #virtual-tour{
+        vertical-align: middle !important;
+        width: 18px !important;
+        height: 17px !important;
+    }
     .ad-container {
         padding-top: 20px;
+        padding-bottom: 40px;
     }
-
+    .features{
+        margin-bottom: 0px !important;
+    }
     .first-sec-info,
     .first-section-img-cnt {
         width: 100%;
     }
+    
+    .title{
+        font-size: 7vw !important;
+    }
+    .pre-launch{
+        font-size: 4vw !important;
+    }
 
     
+        .location {
+            font-size: 10pt !important;
+        }
+    
+        .feature-name{
+            font-size: 16px !important;
+            font-weight: 400 !important;
+        }
 
-    .location {
-        font-size: 14pt;
-    }
 
    
 }
@@ -198,6 +224,9 @@
     .pricing-container {
         max-width: 900px;
     }
+    #first-section{
+        height: 83vh;
+    }
 
     .table {
         font-size: 16px;
@@ -206,5 +235,8 @@
     .tab-menu button {
         font-size: 18px;
         padding: 10px 25px;
+    }
+    .features{
+        max-width: 400px;
     }
 }

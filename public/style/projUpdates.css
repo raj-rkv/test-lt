@@ -41,6 +41,12 @@
         padding: 0% !important;
        
     }
+    #project-update-image{
+        width: 18px;
+    vertical-align: sub;
+    transform: translate(0px, -1px);
+    height: 18px;
+    }
     .mobile-image {
         display: block;
         margin: 0 auto;

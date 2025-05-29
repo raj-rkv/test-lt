@@ -72,7 +72,7 @@
 }
 
 .custom-navbar-brand img {
-    width: 110px;
+    width: 150px;
 }
 
 .custom-navbar-links {
@@ -80,18 +80,20 @@
     display: flex;
     margin: 0 auto !important;
     overflow: hidden;
+    
     transition: all 0.3s ease-in-out;
 }
 
 .custom-navbar-links li {
     margin: 0 10px;
+    color: rgba(0, 0, 0, 0.65);
 }
 
 .custom-navbar-links a {
     font-family: 'DM Sans', sans-serif;
-    font-weight: 700 !important;
+    /* font-weight: 700 !important; */
     text-transform: uppercase;
-    color: #4A4A4A;
+    color: rgba(0, 0, 0, 0.65);
     text-decoration: none;
     padding: 8px 12px;
     display: block;
@@ -133,6 +135,10 @@
     height: 2px;
     background: black;
     margin: 4px 0;
+}
+
+.MahaRERA:hover {
+    cursor: pointer;
 }
 
 /* === Responsive Design === */
@@ -212,6 +218,10 @@
         position: absolute;
         right: 25%;
     }
+
+    .custom-navbar-brand img {
+        width: 110px;
+    }
 }
 
 /* ≤768px */
@@ -227,6 +237,9 @@
 
     .custom-call-btn {
         font-size: 15px;
+    }
+    .custom-navbar-brand img {
+        width: 110px;
     }
 }
 

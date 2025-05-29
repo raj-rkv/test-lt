@@ -12,7 +12,11 @@
     flex-direction: column;
     align-items: center;
 }
-
+.roy-color{
+    text-align: center;
+    font-size: 16px;
+    color: #8b0b04 !important;
+}
 .royalty-logo {
     margin-bottom: 30px;
 }
@@ -72,6 +76,7 @@
     line-height: 1.4;
 }
 
+
 /* Responsive Design */
 @media screen and (max-width: 992px) {
     .royalty-cards {
@@ -82,11 +87,24 @@
     .royalty-card {
         flex: 0 0 calc(50% - 10px);
     }
+    .roy-color{
+        font-size: 13px !important;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #royalti-icons {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .royalty-section {
         padding: 40px 0;
+    }
+    #royalti-icons, #royaliti-text {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
 
     .royalty-text {
@@ -103,6 +121,13 @@
     .royalty-card p {
         font-size: 12px;
     }
+}
+
+@media screen and (min-width:576px) {
+    .qr-codes-mob{
+        display: none !important; 
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
@@ -143,9 +168,20 @@
     .royalty-logo-img {
         width: 150px;
     }
-
+    .footer-content{
+        margin-bottom: 40px;
+    }
     .footer {
         padding-bottom: 53px;
+    }
+    .qr-codes-deskTab{
+        display:none !important;
+    }
+    .qr-codes-mob{
+        display: block !important;
+        text-align: center;
+        margin-bottom: 30px;
+        padding:20px;
     }
 }
 
@@ -262,7 +298,11 @@
     margin: 0 auto;
     padding: 0 80px;
 }
-
+.fw-bold{
+    margin-top: 20px;
+    width: 100%;
+   
+}
 .disclaimer-section {
     display: flex;
     justify-content: space-between;
