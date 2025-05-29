@@ -129,34 +129,34 @@ app.post('/send', async (req, res) => {
         res.status(500).json({ success: false, message: 'Failed to send email' });
     }
 
-    // try {
-    //     const transporter = nodemailer.createTransport({
-    //         service: 'gmail',
-    //         auth: {
-    //             user: process.env.EMAIL_USER,
-    //             pass: process.env.EMAIL_PASS,
-    //         },
-    //     });
+    try {
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS,
+            },
+        });
 
-    //     const message = `
-    //    <h2>Dear ${name},</h2> 
-    //         <p>We have received your inquiry, we will soon get back to you.</p> 
-	// 		<br>
-    //         <p><b>Team Royalti</b><br>
-    //         thewadhwacourtyard.in</p> `;
+        const message = `
+       <h2>Dear ${name},</h2> 
+            <p>We have received your inquiry, we will soon get back to you.</p> 
+			<br>
+            <p><b>Team Royalti</b><br>
+            thewadhwacourtyard.in</p> `;
 
-    //     await transporter.sendMail({
-    //         from: process.env.EMAIL_USER,
-    //         to: email,
-    //         subject: 'Customer - Response',
-    //         html: message,
-    //     });
-    //     // res.status(200).json({ success: true, message: 'Email sent successfully!' });
-    //     res.redirect('/thank-you.html');
-    // } catch (err) {
-    //     console.error('Error sending email:', err);
-    //     res.status(500).json({ success: false, message: 'Failed to send email' });
-    // }
+        await transporter.sendMail({
+            from: process.env.EMAIL_USER,
+            to: email,
+            subject: 'Customer - Response',
+            html: message,
+        });
+        // res.status(200).json({ success: true, message: 'Email sent successfully!' });
+        res.redirect('/thank-you.html');
+    } catch (err) {
+        console.error('Error sending email:', err);
+        res.status(500).json({ success: false, message: 'Failed to send email' });
+    }
 });
 
 app.listen(PORT, () => {

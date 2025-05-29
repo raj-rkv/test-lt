@@ -152,6 +152,7 @@
     .sec2-heading {
         font-size: 24pt !important;
         line-height: 36px;
+        margin-bottom: 15px !important;
     }
 
     .sec2-down-btn {
@@ -190,7 +191,7 @@
 
     .sec2-heading {
         padding: 0px !important;
-    margin-bottom: 30px !important;
+    margin-bottom: 30px ;
     line-height: 48px;
     font-family: 'DM Sans', sans-serif;
     font-size: 20pt !important;

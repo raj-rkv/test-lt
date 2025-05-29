@@ -102,7 +102,7 @@
 }
 
 .custom-navbar-links a:hover {
-    color: var(--mouseover-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 

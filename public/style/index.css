@@ -382,9 +382,7 @@ section {
 #rera-ul{
     display: list-item;
     margin:0px !important;
-    /* font-size: 15px;
-    font-weight: 550;
-    color : #666666; */
+
 }
 
 #rera-ul li{

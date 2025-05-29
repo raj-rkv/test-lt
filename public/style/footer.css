@@ -77,6 +77,7 @@
 }
 
 
+
 /* Responsive Design */
 @media screen and (max-width: 992px) {
     .royalty-cards {
@@ -120,6 +121,10 @@
 
     .royalty-card p {
         font-size: 12px;
+    }
+    .royalti-desc{
+        font-size: 11px !important;
+        color: #666666 !important;
     }
 }
 
@@ -166,7 +171,7 @@
     }
 
     .royalty-logo-img {
-        width: 150px;
+        width: 180px;
     }
     .footer-content{
         margin-bottom: 40px;
