@@ -29,7 +29,7 @@
 
 /* Information text */
 .sec2-info {
-    font-size: 1vw;
+    font-size: 18px;
     font-weight: 500;
     padding-left: 5% !important;
     line-height: 35px;
@@ -145,7 +145,7 @@
     }
 
     .sec2-info {
-        font-size: 16px;
+        font-size: 16px !important;
         line-height: 28px;
     }
 
@@ -221,9 +221,9 @@
         font-size: 1vw;
     }
 
-    .sec2-info {
+    /* .sec2-info {
         font-size: 18px;
-    }
+    } */
 
     .sec2-heading {
         font-size: 32pt !important;
@@ -235,5 +235,17 @@
     .sec-desc-aparts{
        
         padding-left:2em;
+    }
+}
+
+@media (min-width: 776px) and  (max-width:1200px){
+    .sec2-info{
+        font-size: 14px;
+    }
+}
+
+@media (min-width:776px) and (max-width:992px){
+    .sec2-info{
+        font-size: 14px;
     }
 }

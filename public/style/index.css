@@ -26,12 +26,12 @@ body{
 
 @keyframes fadeInUp {
     0% {
-        opacity: 0.4;
-        transform: translateY(80px);
+        opacity: 1;
+        transform: translateY(150px);
     }
     30%{
-        opacity: 0.8;
-        transform:translateY(40px);
+        opacity: 1;
+        transform:translateY(100px);
     }
     to {
         opacity: 1;
@@ -68,7 +68,7 @@ body{
 section {
     scroll-margin-top: 30px;
     overflow: clip;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .register-hover:hover {
@@ -169,6 +169,10 @@ section {
     box-shadow: none;
 }
 
+.separate{
+    margin: 3px !important;
+}
+
 /* Responsive styles for intro sections */
 @media screen and (max-width: 992px) {
 
@@ -224,6 +228,12 @@ section {
 @media (max-width: 768px) {
     .desktopView {
         display: none !important;
+    }
+    .separate{
+        width: 3px;
+        background-color: grey;
+        border: 1px solid grey;
+        /* margin-bottom: 6px; */
     }
 
     .tabView {

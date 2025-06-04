@@ -19,6 +19,13 @@
 }
 
 
+@media (min-width:992px ) and (max-width:1024px) {
+    
+.location-tab{
+    width: 40%;
+    margin-right: 10%;
+}
+}
 
 /* Small Screens (Up to 576px) */
 @media (max-width: 576px) {

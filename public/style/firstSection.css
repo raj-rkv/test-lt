@@ -151,10 +151,19 @@
         flex-wrap: wrap;
         text-align: center;
     }
+    .features{
+        width: 90% ;
+        margin-bottom:0px !important;
+    }
+    
 
     .first-sec-info,
     .first-section-img-cnt {
         width: 100%;
+    }
+
+    .shift-right-20{
+        transform: translateX(20px);
     }
 
 
@@ -165,7 +174,6 @@
 
     .features {
         flex-direction: row;
-        gap: 10px;
     }
 
     .pricing {
@@ -173,8 +181,36 @@
     }
 }
 
+@media (min-width:576px) and (max-width: 776px ) {
+
+    .features{
+        width: 70% ;
+        
+    }
+    
+}
+
+@media (min-width: 776px ) and (max-width: 992px) {
+    .features{
+        margin-bottom: 0px !important;
+        width: 90%;
+    }
+}
+@media (max-width: 344px) {
+    .features{
+        /* margin-bottom: 0px !important; */
+        width: 100%;
+    }
+}
+@media (min-width: 472px ) and (max-width: 576px) {
+    .features{
+        margin-bottom: 0px !important;
+        width: 70%;
+    }
+}
+
 /* Medium Screens (576px - 992px) */
-@media (max-width: 992px) {
+@media(max-width: 992px) {
     #first-section {
 
         flex-direction: column;
@@ -190,9 +226,7 @@
         padding-top: 20px;
         padding-bottom: 40px;
     }
-    .features{
-        margin-bottom: 0px !important;
-    }
+   
     .first-sec-info,
     .first-section-img-cnt {
         width: 100%;
@@ -232,9 +266,14 @@
         font-size: 16px;
     }
 
+    .tab-menu{
+        padding-top:10px;
+        gap: 15px;
+    }
+
     .tab-menu button {
         font-size: 18px;
-        padding: 10px 25px;
+        
     }
     .features{
         max-width: 400px;
