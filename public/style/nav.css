@@ -151,7 +151,7 @@
     }
 
     .custom-navbar-links a {
-        font-size: 1vw;
+        font-size: 1.5vw;
     }
 }
 
@@ -231,7 +231,7 @@
     }
 
     .custom-navbar-links a {
-        font-size: 1vw;
+        font-size: 1.5vw;
         text-align: center;
     }
 
@@ -303,6 +303,10 @@
         width: 60px;
         height: 40px;
     }
+
+    .maharera-img{
+        width: 100% !important;
+    }
 }
 
 /* ≥992px */
@@ -312,7 +316,7 @@
     }
 
     .custom-navbar-brand {
-        left: 100px;
+        left: 10%;
     }
 
     #logoImg {
@@ -323,6 +327,6 @@
     .MahaRERA {
         width: 6%;
         position: relative;
-        right: 6%;
+        right: 9%;
     }
 }
